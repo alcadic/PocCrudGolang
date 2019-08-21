@@ -1,0 +1,13 @@
+{{ define "Edit" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h2>Editar Usuario</h2>  
+    <form method="POST" action="update">
+      <input type="hidden" name="uid" value="{{ .Id }}" />
+      <label> Nombre </label><input type="text" name="nombre" value="{{ .Nombre }}"  /><br />
+      <label> Apellidos </label><input type="text" name="apellidos" value="{{ .Apellidos }}"  /><br />
+      <label> Dni </label><input type="text" name="dni" value="{{ .Dni }}"  /><br />
+      <input type="submit" value="Guardar" />
+    </form><br />    
+  {{ template "Footer" }}
+{{ end }}

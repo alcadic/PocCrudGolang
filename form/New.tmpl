@@ -1,0 +1,12 @@
+{{ define "New" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h2>Nuevo usuario</h2>  
+    <form method="POST" action="insert">
+      <label> Nombre </label><input type="text" name="nombre" /><br />
+      <label> Apellidos </label><input type="text" name="apellidos" /><br />
+      <label> Dni </label><input type="text" name="dni" /><br />
+      <input type="submit" value="Guardar" />
+    </form>
+  {{ template "Footer" }}
+{{ end }}

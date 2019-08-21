@@ -1,0 +1,10 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Identificador {{ .Id }} </h2>
+      <p>Nombre: {{ .Nombre }}</p>
+      <p>Apellidos: {{ .Apellidos }}</p>
+      <p>Dni:  {{ .Dni }}</p>
+	  <br /> <a href="/edit?id={{ .Id }}">Editar</a></p>
+  {{ template "Footer" }}
+{{ end }}
